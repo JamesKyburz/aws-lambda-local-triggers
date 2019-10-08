@@ -20,7 +20,8 @@ const sqs = require('./sqs')
 loop({
   queueUrl: 'http://localhost:9324/queue/test',
   sqs,
-  async trigger (messages) {
+  async trigger (event) {
+    // event.Records
   }
 })
 ```
@@ -34,7 +35,8 @@ const { streams } = require('./dynamodb')
 loop({
   streamArn: 'x',
   streams,
-  async trigger (records) {
+  async trigger (event) {
+    // event.Records
   }
 })
 ```

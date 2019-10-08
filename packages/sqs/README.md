@@ -16,7 +16,8 @@ const sqs = require('./sqs')
 loop({
   queueUrl: 'http://localhost:9324/queue/test',
   sqs,
-  async trigger (messages) {
+  async trigger (event) {
+    // event.Records
   }
 })
 ```

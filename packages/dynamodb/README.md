@@ -16,7 +16,8 @@ const { streams } = require('./dynamodb')
 loop({
   streamArn: 'x',
   streams,
-  async trigger (records) {
+  async trigger (event) {
+    // event.Records
   }
 })
 ```

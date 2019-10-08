@@ -43,7 +43,7 @@ module.exports = async ({
     const data = await streams.getRecords({ ShardIterator: iterator }).promise()
     iterator = data.NextShardIterator
     if (data.Records.length) {
-      await trigger(data.Records)
+      await trigger(data)
     } else {
       await onEmpty()
     }

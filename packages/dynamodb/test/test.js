@@ -44,7 +44,7 @@ test('create image table', async t => {
       streamArn,
       streams,
       waitTimeSeconds: 0.1,
-      trigger (messages) {
+      trigger ({ Records: messages }) {
         return fn(messages)
       },
       onEmpty () {
