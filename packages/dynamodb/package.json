@@ -16,7 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "aws-sdk": "2.635.0",
+    "aws-sdk": "2.636.0",
     "tap": "14.10.6"
   },
   "files": [
